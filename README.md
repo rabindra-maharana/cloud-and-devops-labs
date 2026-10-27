@@ -7,7 +7,10 @@ Welcome to my technical laboratory journal. This space serves as architectural p
 
 ### 🖥️ Microsoft Azure Tracks
 * 📂 **`azure/cybr-30-days/`** $\rightarrow$ Security operations journals, RBAC audits, and automated control plane logging tracks. *(Platform: Cybr.com)*
+  * 📄 [Day 1: Account Initialization & Subscription Governance](./azure/cybr-30-days/day1-setup.md) $\rightarrow$ *Completed & Logged*
+  * 📄 [Day 2: Your First Day Inside the Azure Portal](./azure/cybr-30-days/day2-azure-portal.md) $\rightarrow$ *Active Lab Track*
 * 📂 **`azure/whizlabs-beginners/`** $\rightarrow$ Compute virtualization deployments, virtual networking networks (VNets), and lifecycle tier tracking. *(Platform: Whizlabs)*
+
 * 📂 **`azure/whizlabs-az104/`** $\rightarrow$ Production load balancing setups, hybrid connectivity matrices, and Entra ID access controls. *(Platform: Whizlabs)*
 * 📂 **`azure/kodekloud-az104/`** $\rightarrow$ Deep CLI administrative tasks, cloud shell automation scripts, and platform infrastructure tracking. *(Platform: KodeKloud)*
 
