@@ -1,24 +1,28 @@
 # ☁️ AWS Made Simple: The Core Rules of the Cloud
 * **Platform:** AWS Skill Builder (Cloud Practitioner Essentials)
-* **Lesson:** Module 1 — What is the Cloud & Why Use It?
+* **Lesson:** Module 1 — What is the Cloud & Global Infrastructure
 
 ---
 
 ## 🗺️ The Cloud Mind Map
-*This clean diagram shows exactly how the cloud is split into business benefits and setups.*
+*This clean diagram shows exactly how the cloud is split into business benefits, setups, and global geography.*
 
 ```text
- 🌐 THE CLOUD ENVIRONMENT
+ 🌐 THE AWS ENTERPRISE FRAMEWORK
    │
    ├── 💵 Business Benefits (Why Companies Love It)
    │     ├── Pay-As-You-Go ─── Like a taxi meter (No heavy upfront costs)
    │     ├── Bulk Pricing ──── AWS buys massive hardware so you get discounts
    │     └── Auto-Scaling ──── Automatically grows and shrinks with traffic
    │
-   └── 🏗️ Cloud Infrastructure (Where It Lives)
-         ├── Public Cloud ──── 100% inside AWS servers
-         ├── Hybrid Cloud ──── One foot in your office, one foot in AWS
-         └── Private Cloud ─── Running old servers inside your own office
+   ├── 🏗️ Cloud Infrastructure (Where It Lives)
+   │     ├── Public Cloud ──── 100% inside AWS servers
+   │     ├── Hybrid Cloud ──── One foot in your office, one foot in AWS
+   │     └── Private Cloud ─── Running old servers inside your own office
+   │
+   └── 🌍 Global Infrastructure (How It Stays Safe)
+         ├── AWS Regions ───── Global geographic locations (Data center groups)
+         └── Availability Zones (AZs) ── Isolated data center buildings within a Region
 ```
 
 ---
@@ -70,6 +74,26 @@
 
 ---
 
+## 🌍 AWS Global Infrastructure & High Availability
+
+<details>
+<summary><b>⚡ Click to Open: Regions, Availability Zones, and Disaster Recovery</b></summary>
+
+### 1. AWS Regions (Global Locations)
+* **What it is:** An **AWS Region** is a physical, geographic location around the world that contains a group of clustered data centers. Each Region consists of a **minimum of three physically separate Availability Zones**.
+* **Real-World Analogy:** **A massive global retail chain**. They set up master hubs in key areas worldwide (like North America, Europe, Asia) to be as close to local buyers as possible.
+
+### 2. Availability Zones / AZs (Isolated Power & Connectivity)
+* **What it is:** An **Availability Zone (AZ)** is one or more discrete data centers inside a Region. Each AZ is **completely isolated** with its own **independent power supply, industrial cooling systems, and physical fiber networking**.
+* **Real-World Analogy:** **Separate bank vaults in different parts of a city**. If one vault gets flooded or loses power, the other vaults remain completely safe and open because they run on independent lines.
+
+### 3. Achieving High Availability & Fault Tolerance
+* **What it is:** Running your applications and storing your data **across multiple separate AZs simultaneously**. 
+* **The Goal:** If a sudden power outage or storm knocks out one entire AZ, your application **continues to run from the backup AZ without a single second of interruption** to your global users.
+</details>
+
+---
+
 ## 🧠 Rabindra's Governance Notes (PMP & Six Sigma Mindset)
-* **Cost Control (FinOps):** By leveraging **Auto-Scaling configuration triggers**, we completely eliminate financial waste on idle server runtimes. This perfectly matches **Six Sigma efficiency methodologies** by systematically wiping out processing waste.
-* **Risk Reduction Engineering:** Distributing application footprints across **structurally isolated global AWS zones** ensures that even if an entire region experiences a natural disaster, our **backup infrastructure instantly takes over**. This lowers business runtime downtime risks to near zero.
+* **Waste Elimination (Six Sigma):** Auto-Scaling setup prevents budget leakages on idle server assets, perfectly checking **Six Sigma efficiency controls** by systematically cleaning out processing waste.
+* **Risk Management & Business Continuity (PMP):** Spreading core application footprints across **structurally isolated global AWS zones (Multi-AZ deployment)** serves as a robust disaster mitigation plan. Even under major outages, fallback systems trigger seamlessly to protect core corporate service level commitments.
