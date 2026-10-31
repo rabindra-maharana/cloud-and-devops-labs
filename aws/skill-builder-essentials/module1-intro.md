@@ -1,28 +1,19 @@
 # ☁️ AWS Made Simple: The Core Rules of the Cloud
 * **Platform:** AWS Skill Builder (Cloud Practitioner Essentials)
-* **Lesson:** Module 1 — What is the Cloud & Global Infrastructure
+* **Lesson:** Module 1 — What is the Cloud, Global Infrastructure & Security
 
 ---
 
 ## 🗺️ The Cloud Mind Map
-*This clean diagram shows exactly how the cloud is split into business benefits, setups, and global geography.*
+*This clean diagram shows exactly how Module 1 maps out business benefits, infrastructure, and the security model.*
 
 ```text
  🌐 THE AWS ENTERPRISE FRAMEWORK
    │
-   ├── 💵 Business Benefits (Why Companies Love It)
-   │     ├── Pay-As-You-Go ─── Like a taxi meter (No heavy upfront costs)
-   │     ├── Bulk Pricing ──── AWS buys massive hardware so you get discounts
-   │     └── Auto-Scaling ──── Automatically grows and shrinks with traffic
-   │
-   ├── 🏗️ Cloud Infrastructure (Where It Lives)
-   │     ├── Public Cloud ──── 100% inside AWS servers
-   │     ├── Hybrid Cloud ──── One foot in your office, one foot in AWS
-   │     └── Private Cloud ─── Running old servers inside your own office
-   │
-   └── 🌍 Global Infrastructure (How It Stays Safe)
-         ├── AWS Regions ───── Global geographic locations (Data center groups)
-         └── Availability Zones (AZs) ── Isolated data center buildings within a Region
+   ├── 💵 Business Benefits ─── Pay-As-You-Go, Economies of Scale, Auto-Scaling
+   ├── 🏗️ Cloud Setups ──────── Public Cloud, Hybrid Cloud, Private Cloud
+   ├── 🌍 Global Infrastructure ─ Regions (Geographic Hubs) & Availability Zones (Isolated Vaults)
+   └── 🔒 Shared Responsibility ─ Security OF the Cloud (AWS) vs Security IN the Cloud (Customer)
 ```
 
 ---
@@ -94,6 +85,32 @@
 
 ---
 
-## 🧠 Rabindra's Governance Notes (PMP & Six Sigma Mindset)
+## 🔒 The AWS Shared Responsibility Model (Crucial Security)
+
+<details>
+<summary><b>🛡️ Click to Open: Who protects what?</b></summary>
+
+### 1. AWS's Job: Security "OF" the Cloud
+* **Simple Meaning:** Amazon is completely responsible for protecting the physical infrastructure that runs all your services.
+* **What they protect:** 
+  * The **physical security of data center buildings** (guards, cameras, concrete walls).
+  * The **hardware metal blocks** (physical hard drives, server racks, and cables).
+  * The **core software virtualization layer** that carves up the hardware.
+
+### 2. Our Job (The Customer): Security "IN" the Cloud
+* **Simple Meaning:** You are completely responsible for managing, configuring, and protecting whatever data you put inside AWS.
+* **What you protect:**
+  * **Your Data & Files:** Making sure your files are encrypted and private.
+  * **Identity and Access (IAM):** Choosing who gets a login password and enforcing Multi-Factor Authentication (MFA).
+  * **Operating Systems & Firewalls:** Keeping your virtual computers patched and configuring network security rules.
+
+### 🏢 Real-World Analogy: Renting a Storage Unit
+* **AWS is the storage company:** They provide the secure building, the perimeter fence, the security guards, and the roof. They protect **the facility**.
+* **You are the renter:** You are responsible for putting a high-quality padlock on your storage unit door, choosing who gets a copy of the key, and ensuring the items you put inside aren't stolen or unencrypted.
+</details>
+
+---
+
+## 🧠 Governance Notes (PMP & Six Sigma Mindset)
 * **Waste Elimination (Six Sigma):** Auto-Scaling setup prevents budget leakages on idle server assets, perfectly checking **Six Sigma efficiency controls** by systematically cleaning out processing waste.
-* **Risk Management & Business Continuity (PMP):** Spreading core application footprints across **structurally isolated global AWS zones (Multi-AZ deployment)** serves as a robust disaster mitigation plan. Even under major outages, fallback systems trigger seamlessly to protect core corporate service level commitments.
+* **Risk Management & Compliance (PMP):** Understanding the **Shared Responsibility Model** is the ultimate risk matrix tool. By knowing exactly where AWS's legal security liabilities end and where our corporate audit responsibilities begin, we eliminate compliance blindspots entirely during an infrastructure deployment project.
